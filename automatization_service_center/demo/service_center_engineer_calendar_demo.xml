@@ -1,0 +1,26 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="service_center_calendar_for_vasyl" model="service.center.engineer.calendar">
+            <field name="time_table_id" ref="automatization_service_center.service_center_time_table_for_vasyl"/>
+            <field name="date" eval="(datetime.today() + timedelta(days=5)).strftime('%Y-%m-%d')"/>
+            <field name="hour_from">12.00</field>
+            <field name="hour_to">15.00</field>
+        </record>
+
+        <record id="service_center_calendar_for_petro" model="service.center.engineer.calendar">
+            <field name="time_table_id" ref="automatization_service_center.service_center_time_table_for_petro"/>
+            <field name="date" eval="(datetime.today() + timedelta(days=4)).strftime('%Y-%m-%d')"/>
+            <field name="hour_from">12.00</field>
+            <field name="hour_to">15.00</field>
+        </record>
+
+        <record id="service_center_calendar_for_taras" model="service.center.engineer.calendar">
+            <field name="time_table_id" ref="automatization_service_center.service_center_time_table_for_taras"/>
+            <field name="date" eval="(datetime.today() + timedelta(days=3)).strftime('%Y-%m-%d')"/>
+            <field name="hour_from">12.00</field>
+            <field name="hour_to">15.00</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="overview_result">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>
+                            <span>
+                                Engineer:
+                                <t t-out="doc.lead_id.engineer_id.name"/>
+                            </span>
+                        </h2>
+                        <br/>
+                        <h2>
+                            <span>
+                                Client:
+                                <t t-out="doc.lead_id.res_partner_id.name"/>
+                            </span>
+                        </h2>
+                        <br/>
+                        <h2>
+                            <span>
+                                Car:
+                                <t t-out="doc.lead_id.car_id.display_name"/>
+                            </span>
+                        </h2>
+                        <h3>Services</h3>
+                        <div>
+                            <table style="width: 1039px">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <h4>Service</h4>
+                                        </th>
+                                        <th>
+                                            <h4>Price</h4>
+                                        </th>
+                                    </tr>
+                                    <t t-set="total_price" t-value="0"/>
+                                    <t t-foreach="doc.service_ids" t-as="service">
+                                        <t t-set="total_price" t-value="total_price+service.price"/>
+                                        <tr>
+                                            <th style="padding: 2px 5px; text-align: left;">
+                                                <h4>
+                                                    <t t-out="service.name"/>
+                                                </h4>
+                                            </th>
+                                            <th>
+                                                <h4>
+                                                    <t t-out="service.price"/>
+                                                    <t t-out="service.currency_id.display_name"/>
+                                                </h4>
+                                            </th>
+                                        </tr>
+                                    </t>
+                                    <tr>
+                                        <th style="padding: 2px 5px; text-align: left;">
+                                            <h4>
+                                                Total price
+                                            </h4>
+                                        </th>
+                                        <th>
+                                            <h4>
+                                                <t t-out="total_price"/>
+                                                <t t-out="service.currency_id.display_name"/>
+                                            </h4>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <t t-if="doc.comment">
+                                <br/>
+                                <h2>
+                                    Additional Info
+                                </h2>
+                                <br/>
+                                <h4>
+                                    <t t-out="doc.comment"/>
+                                </h4>
+                            </t>
+                        </div>
+                        <div class="footer">
+                            <div class="text-center" style="border-top: 1px solid black;">
+                                <ul class="list-inline">
+                                    <li>
+                                        <t t-out="datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,21 @@
+<odoo>
+    <data noupdate="1">
+        <record id="engineer_vasyl" model="res.users">
+            <field name="name">Vasyl</field>
+            <field name="login">example@example.com</field>
+            <field name="is_engineer" eval="True"/>
+        </record>
+
+        <record id="engineer_petro" model="res.users">
+            <field name="name">Petro</field>
+            <field name="login">example2@example.com</field>
+            <field name="is_engineer" eval="True"/>
+        </record>
+
+        <record id="engineer_taras" model="res.users">
+            <field name="name">Taras</field>
+            <field name="login">example3@example.com</field>
+            <field name="is_engineer" eval="True"/>
+        </record>
+    </data>
+</odoo>

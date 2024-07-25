@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="service_center_list_leads_view_form" model="ir.ui.view">
+        <field name="name">service.center.list.leads.form</field>
+        <field name="model">service.center.list.leads</field>
+        <field name="arch" type="xml">
+            <form>
+                <header></header>
+                <sheet>
+                    <group>
+                        <field name="engineer_ids" widget="many2many_tags"/>
+                        <label for="from_date" string="Dates"/>
+                        <div class="o_row">
+                            <field name="from_date" widget="daterange"
+                                   options="{'related_end_date': 'to_date'}"/>
+                            <i class="fa fa-long-arrow-right mx2" aria-label="Arrow icon" title="Arrow"/>
+                            <field name="to_date" widget="daterange"
+                                   options="{'related_start_date': 'from_date'}"/>
+                        </div>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_submit_list_leads"
+                            string="Submit"
+                            type="object"/>
+                    <button special="cancel" string="Close"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="service_center_list_leads_act_window_from_actions"
+            model="ir.actions.act_window">
+        <field name="name">Get List Leads</field>
+        <field name="res_model">service.center.list.leads</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="base.model_res_users"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="binding_type">report</field>
+    </record>
+
+<!--        <record id="hospital_list_diagnosis_act_window_from_actions"-->
+<!--            model="ir.actions.act_window">-->
+<!--        <field name="name">Get List Diagnosis</field>-->
+<!--        <field name="res_model">hospital.list.diagnosis</field>-->
+<!--        <field name="view_mode">form</field>-->
+<!--        <field name="target">new</field>-->
+<!--        <field name="binding_model_id" ref="hr_hospital.model_hospital_doctor"/>-->
+<!--        <field name="binding_view_types">list,form</field>-->
+<!--        <field name="binding_type">report</field>-->
+<!--    </record>-->
+
+</odoo>

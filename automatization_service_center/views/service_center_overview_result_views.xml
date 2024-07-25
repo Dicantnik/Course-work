@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="service_center_overview_result_view_tree" model="ir.ui.view">
+        <field name="name">service.center.overview.result.tree</field>
+        <field name="model">service.center.overview.result</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="lead_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="service_center_overview_result_view_form" model="ir.ui.view">
+        <field name="name">service.center.overview.result.form</field>
+        <field name="model">service.center.overview.result</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="lead_id"/>
+                        <field name="service_ids" widget="many2many_tags"/>
+                        <field name="comment"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="service_center_overview_result_view_search" model="ir.ui.view">
+        <field name="name">service.center.overview.result.search</field>
+        <field name="model">service.center.overview.result</field>
+        <field name="arch" type="xml">
+            <search>
+                <group>
+                    <filter string="Services" name="services" domain="[]" context="{'group_by': 'service_ids'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="service_center_overview_result_act_window" model="ir.actions.act_window">
+        <field name="name">OverView result</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">service.center.overview.result</field>
+        <field name="view_mode">tree,form,search</field>
+    </record>
+
+    <menuitem id="service_center_overview_result_view"
+              action="service_center_overview_result_act_window"
+              parent="service_center_lead_menu"
+              name="Overview result"
+              sequence="15"/>
+
+</odoo>

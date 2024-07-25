@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="service_center_slot_view_tree" model="ir.ui.view">
+        <field name="name">service.center.slot.tree</field>
+        <field name="model">service.center.slot</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="engineer_id"/>
+                <field name="date"/>
+                <field name="hour_from" widget="float_time"/>
+                <field name="hour_to" widget="float_time"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="service_center_slot_view_form" model="ir.ui.view">
+        <field name="name">service.center.slot.form</field>
+        <field name="model">service.center.slot</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="engineer_id"/>
+                        <field name="date"/>
+                        <field name="hour_from" widget="float_time"/>
+                        <field name="hour_to" widget="float_time"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="service_center_slot_view_search" model="ir.ui.view">
+        <field name="name">service.center.slot.search</field>
+        <field name="model">service.center.slot</field>
+        <field name="arch" type="xml">
+            <search>
+                <group>
+                    <filter string="Engineer" name="engineer" domain="[]" context="{'group_by': 'engineer_id'}"/>
+                    <separator/>
+                    <filter string="Date" name="date" domain="[]" context="{'group_by': 'date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="service_center_slot_act_window" model="ir.actions.act_window">
+        <field name="name">Slot</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">service.center.slot</field>
+        <field name="view_mode">tree,form,search</field>
+    </record>
+
+    <menuitem id="service_center_slot_view"
+              action="service_center_slot_act_window"
+              parent="service_center_engineer_menu"
+              name="Slot"
+              sequence="25"/>
+
+</odoo>

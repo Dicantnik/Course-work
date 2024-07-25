@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="service_center_engineer_view_form" model="ir.ui.view">
+        <field name="name">service.center.res.users.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='login']" position="after">
+                <label for="is_engineer" string="Is engineer: "/>
+                <field name="is_engineer"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="service_center_engineer_act_window" model="ir.actions.act_window">
+        <field name="name">Worker</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.users</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="domain">[('is_engineer','=',True)]</field>
+    </record>
+
+        <menuitem id="service_center_engineer_view"
+              action="service_center_engineer_act_window"
+              parent="service_center_engineer_menu"
+              name="Engineers"
+              sequence="1"/>
+
+</odoo>

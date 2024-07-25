@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="service_center_car_view_tree" model="ir.ui.view">
+        <field name="name">service.center.car.tree</field>
+        <field name="model">service.center.car</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="mark"/>
+                <field name="model"/>
+                <field name="year"/>
+                <field name="mileage"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="service_center_car_view_form" model="ir.ui.view">
+        <field name="name">service.center.car.form</field>
+        <field name="model">service.center.car</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="mark"/>
+                            <field name="model"/>
+                            <field name="year"/>
+                            <field name="mileage"/>
+                            <field name="res_partner_id"/>
+                        </group>
+                        <group>
+                            <field name="photo" widget="image" nolabel="1" options="{'size': [512, 512]}"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="service_center_car_view_kanban" model="ir.ui.view">
+        <field name="name">service.center.car.kanban</field>
+        <field name="model">service.center.car</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="mark"/>
+                <field name="model"/>
+                <field name="year"/>
+                <field name="mileage"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div>
+                                <h2>
+                                    <field name="display_name"/>
+                                </h2>
+                                <div>
+                                    <span>Year: </span>
+                                    <field name="year"/>
+                                </div>
+                                <div>
+                                    <span>Mileage: </span>
+                                    <field name="mileage"/>
+                                </div>
+                            </div>
+<!--                            <div>-->
+<!--                                <img t-attf-src="#{kanban_image('service.center.car', 'photo', record.id.raw_value)}"-->
+<!--                                     role="img" t-att-alt="record.id.value" options="{'size': [256, 256]}"/>-->
+<!--                            </div>-->
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="service_center_car_act_window" model="ir.actions.act_window">
+        <field name="name">Car</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">service.center.car</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem id="service_center_car_view"
+              action="service_center_car_act_window"
+              parent="service_center_partner_menu"
+              name="Car"
+              sequence="4"/>
+
+</odoo>

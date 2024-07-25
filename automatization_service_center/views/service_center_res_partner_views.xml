@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="service_center_res_partner_view_form" model="ir.ui.view">
+        <field name="name">service.center.res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']" position="after">
+                <page name="cars" string="Cars">
+                    <field name="car_ids" mode="kanban"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="service_center_res_partner_act_window" model="ir.actions.act_window">
+        <field name="name">Client</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem id="service_center_res_partner_view"
+              action="service_center_res_partner_act_window"
+              parent="service_center_partner_menu"
+              name="Partner"
+              sequence="1"/>
+
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="service_center_menu_root"
+              name="Service Station"
+              sequence="98"/>
+
+    <menuitem id="service_center_partner_menu"
+              parent="service_center_menu_root"
+              name="Partner"
+              sequence="1"/>
+
+    <menuitem id="service_center_lead_menu"
+              parent="service_center_menu_root"
+              name="Leads"
+              sequence="10"/>
+
+    <menuitem id="service_center_engineer_menu"
+              parent="service_center_menu_root"
+              name="Engineers"
+              sequence="15"/>
+
+    <menuitem id="service_center_service_menu"
+              action="service_center_service_act_window"
+              parent="service_center_menu_root"
+              name="Services"
+              sequence="20"/>
+</odoo>

@@ -1,0 +1,23 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="service_center_bmv_x5" model="service.center.car">
+            <field name="mark">BMW</field>
+            <field name="model">X5</field>
+            <field name="res_partner_id" ref="base.user_demo"/>
+        </record>
+
+        <record id="service_center_toyota_land_cruiser" model="service.center.car">
+            <field name="mark">Toyota</field>
+            <field name="model">Land Cruiser</field>
+            <field name="res_partner_id" ref="base.user_demo"/>
+        </record>
+
+        <record id="service_center_audi_a6" model="service.center.car">
+            <field name="mark">Audi</field>
+            <field name="model">A6</field>
+            <field name="res_partner_id" ref="base.res_partner_address_15"/>
+        </record>
+
+    </data>
+</odoo>

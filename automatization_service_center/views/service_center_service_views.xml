@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="service_center_service_view_tree" model="ir.ui.view">
+        <field name="name">service.center.service.tree</field>
+        <field name="model">service.center.service</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="price"/>
+                <field name="currency_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="service_center_service_view_form" model="ir.ui.view">
+        <field name="name">service.center.service.form</field>
+        <field name="model">service.center.service</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="duration" widget="float_time"/>
+                        <field name="price"/>
+                        <field name="currency_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="service_center_service_view_graph" model="ir.ui.view">
+        <field name="name">service.center.service.graph</field>
+        <field name="model">service.center.service</field>
+        <field name="arch" type="xml">
+            <graph>
+                <field name="price"/>
+                <field name="name"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="service_center_service_act_window" model="ir.actions.act_window">
+        <field name="name">Service</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">service.center.service</field>
+        <field name="view_mode">tree,form,graph</field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,522 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* automatization_service_center
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-25 12:40+0000\n"
+"PO-Revision-Date: 2024-07-25 12:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_list_leads_view_form
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+msgstr ""
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_lead_view_kanban
+msgid "<span>Car:</span>"
+msgstr "Машина:"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_lead_view_kanban
+msgid "<span>Client:</span>"
+msgstr "Клаєнт:"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_car_view_kanban
+msgid "<span>Mileage: </span>"
+msgstr "Пробіг:"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_car_view_kanban
+msgid "<span>Year: </span>"
+msgstr "Рік:"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+msgid "Additional Info"
+msgstr "Додаткова інформація"
+
+#. module: automatization_service_center
+#. odoo-python
+#: code:addons/automatization_service_center/models/service_center_time_table.py:0
+#, python-format
+msgid "Can`t create 2 timetables for one engineer"
+msgstr "Не можна стоврити 2 графіки для одного інженера"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_car_act_window
+#: model:ir.model.fields,field_description:automatization_service_center.field_res_partner__car_ids
+#: model:ir.model.fields,field_description:automatization_service_center.field_res_users__car_ids
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__car_id
+#: model:ir.ui.menu,name:automatization_service_center.service_center_car_view
+msgid "Car"
+msgstr "Машина"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+msgid "Car:"
+msgstr "Машина:"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_res_partner_view_form
+msgid "Cars"
+msgstr "Машини"
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_car
+msgid "Cars of clients"
+msgstr "Машини Клієнта"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_res_partner_act_window
+#: model:res.groups,name:automatization_service_center.group_service_center_user
+msgid "Client"
+msgstr "Клієнт"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+msgid "Client:"
+msgstr "Клієнт:"
+
+#. module: automatization_service_center
+#: model:res.groups,comment:automatization_service_center.group_service_center_user
+msgid "Clients of the Service Center"
+msgstr ""
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_list_leads_view_form
+msgid "Close"
+msgstr "Закрити"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__comment
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__comment
+msgid "Comment"
+msgstr "Коментар"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__create_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__create_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__create_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__create_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__create_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__create_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__create_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__create_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__create_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__create_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__create_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__create_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__create_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__create_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__currency_id
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__date
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_engineer_calendar_view_search
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_slot_view_search
+msgid "Date"
+msgstr "Дата"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_list_leads_view_form
+msgid "Dates"
+msgstr "Дати"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__display_name
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__display_name
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__display_name
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__display_name
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__display_name
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__display_name
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__display_name
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__duration
+msgid "Duration"
+msgstr "Тривалість"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__engineer_id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__engineer_ids
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__engineer_id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__engineer_id
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_engineer_calendar_view_search
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_slot_view_search
+msgid "Engineer"
+msgstr "Інженер"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_engineer_calendar_act_window
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__engineer_calendar_ids
+#: model:ir.ui.menu,name:automatization_service_center.service_center_engineer_calendar_view
+msgid "Engineer Calendar"
+msgstr "Календар інженера"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+msgid "Engineer:"
+msgstr "Інженер:"
+
+#. module: automatization_service_center
+#: model:ir.ui.menu,name:automatization_service_center.service_center_engineer_menu
+#: model:ir.ui.menu,name:automatization_service_center.service_center_engineer_view
+msgid "Engineers"
+msgstr "Інженери"
+
+#. module: automatization_service_center
+#: model:ir.model.fields.selection,name:automatization_service_center.selection__service_center_lead__status__entry
+msgid "Entry"
+msgstr "Заявка"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__from_date
+msgid "From Date"
+msgstr "Дата з"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_list_leads_act_window_from_actions
+msgid "Get List Leads"
+msgstr "Отримати список лідів"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__id
+msgid "ID"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__is_booked
+msgid "Is Booked"
+msgstr "Заброньовано"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_res_users__is_engineer
+msgid "Is Engineer"
+msgstr "Інженер"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_engineer_view_form
+msgid "Is engineer:"
+msgstr "Інженер"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__write_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__write_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__write_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__write_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__write_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__write_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__write_uid
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__write_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__write_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__write_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__write_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__write_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__write_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__write_date
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_time_table__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_lead_act_window
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__lead_id
+msgid "Lead"
+msgstr "Лід"
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_lead
+msgid "Lead with all information"
+msgstr "Ліди з повною інформацією"
+
+#. module: automatization_service_center
+#: model:ir.ui.menu,name:automatization_service_center.service_center_lead_menu
+#: model:ir.ui.menu,name:automatization_service_center.service_center_lead_patient_view
+msgid "Leads"
+msgstr "Ліди"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__mark
+msgid "Mark"
+msgstr "Марка"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__mileage
+msgid "Mileage"
+msgstr "Пробіг"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__model
+msgid "Model"
+msgstr "Модель"
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_res_partner
+msgid "Model for Clients"
+msgstr "Контакт"
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_res_users
+msgid "Model for Engineers"
+msgstr "Користувач"
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_engineer_calendar
+msgid "Model for calendar of engineers"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_service
+msgid "Model for services"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_slot
+msgid "Model for slots of timetable"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_time_table
+msgid "Model for timetable of engineers"
+msgstr ""
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_overview_result_act_window
+msgid "OverView result"
+msgstr "Результат огляду"
+
+#. module: automatization_service_center
+#: model:ir.actions.report,name:automatization_service_center.action_report_overview_result
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__overview_result_id
+msgid "Overview Result"
+msgstr "Результат огляду"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__overview_slot_id
+msgid "Overview Slot"
+msgstr "Слот для огляду"
+
+#. module: automatization_service_center
+#: model:ir.ui.menu,name:automatization_service_center.service_center_overview_result_view
+msgid "Overview result"
+msgstr "Результат огляду"
+
+#. module: automatization_service_center
+#: model:ir.ui.menu,name:automatization_service_center.service_center_partner_menu
+#: model:ir.ui.menu,name:automatization_service_center.service_center_res_partner_view
+msgid "Partner"
+msgstr "Клієнт"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__photo
+msgid "Photo"
+msgstr "Фото"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_service__price
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+msgid "Price"
+msgstr "Ціна"
+
+#. module: automatization_service_center
+#. odoo-python
+#: code:addons/automatization_service_center/models/service_center_time_table.py:0
+#, python-format
+msgid "Problem with time"
+msgstr "Проблема з часом"
+
+#. module: automatization_service_center
+#: model:ir.model.fields.selection,name:automatization_service_center.selection__service_center_lead__status__repaired
+msgid "Repaired"
+msgstr "Відремонтовано"
+
+#. module: automatization_service_center
+#: model:ir.model.fields.selection,name:automatization_service_center.selection__service_center_lead__status__repairing
+msgid "Repairing"
+msgstr "В ремонті"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__res_partner_id
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__res_partner_id
+msgid "Res Partner"
+msgstr "Клієнт"
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_overview_result
+msgid "Result of overview"
+msgstr "Результат огляду"
+
+#. module: automatization_service_center
+#: model:ir.model.fields.selection,name:automatization_service_center.selection__service_center_lead__status__reviewed
+msgid "Reviewed"
+msgstr "Оглянуто"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_service_act_window
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_overview_result__service_ids
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+msgid "Service"
+msgstr "Послуга"
+
+#. module: automatization_service_center
+#: model:ir.module.category,name:automatization_service_center.category_service_center
+msgid "Service Center"
+msgstr "СТО"
+
+#. module: automatization_service_center
+#: model:ir.ui.menu,name:automatization_service_center.service_center_menu_root
+msgid "Service Station"
+msgstr "СТО"
+
+#. module: automatization_service_center
+#: model:ir.ui.menu,name:automatization_service_center.service_center_service_menu
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_overview_result_view_search
+msgid "Services"
+msgstr "Послуги"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_slot_act_window
+#: model:ir.ui.menu,name:automatization_service_center.service_center_slot_view
+msgid "Slot"
+msgstr "Слот"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_lead__status
+msgid "Status"
+msgstr "Статус"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.service_center_list_leads_view_form
+msgid "Submit"
+msgstr "Підтвердити"
+
+#. module: automatization_service_center
+#. odoo-python
+#: code:addons/automatization_service_center/models/service_center_car.py:0
+#, python-format
+msgid "The Year must be a sequence of digits."
+msgstr "Рік повинен складатись тільки з чисел"
+
+#. module: automatization_service_center
+#. odoo-python
+#: code:addons/automatization_service_center/models/service_center_car.py:0
+#, python-format
+msgid "The mileage must be a sequence of digits."
+msgstr "Пробіг повинен мати тільки числа"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__time_table_id
+msgid "Time Table"
+msgstr "Графік"
+
+#. module: automatization_service_center
+#: model:ir.ui.menu,name:automatization_service_center.service_center_timetable_view
+msgid "TimeTable"
+msgstr "Графік"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_timetable_act_window
+msgid "Timetable"
+msgstr "Графік"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_list_leads__to_date
+msgid "To Date"
+msgstr "Дата до"
+
+#. module: automatization_service_center
+#: model_terms:ir.ui.view,arch_db:automatization_service_center.overview_result
+msgid "Total price"
+msgstr "Загальна ціна"
+
+#. module: automatization_service_center
+#: model:ir.model,name:automatization_service_center.model_service_center_list_leads
+msgid "TransientModel for group and filter leads"
+msgstr "Фільтрація та групування лідів"
+
+#. module: automatization_service_center
+#: model:ir.module.category,description:automatization_service_center.category_service_center
+msgid "Users of Service Center"
+msgstr "Користувачі СТО"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__hour_from
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__hour_from
+msgid "Work from"
+msgstr "Робота з"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__hour_to
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_slot__hour_to
+msgid "Work to"
+msgstr "Робота до"
+
+#. module: automatization_service_center
+#: model:ir.actions.act_window,name:automatization_service_center.service_center_engineer_act_window
+msgid "Worker"
+msgstr "Інженер"
+
+#. module: automatization_service_center
+#: model:res.groups,name:automatization_service_center.group_service_center_admin
+msgid "Workers"
+msgstr "Інженери"
+
+#. module: automatization_service_center
+#: model:res.groups,comment:automatization_service_center.group_service_center_admin
+msgid "Workers of the Service Center"
+msgstr "Працівники СТО"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_engineer_calendar__date
+msgid "Working date"
+msgstr "Дата роботи"
+
+#. module: automatization_service_center
+#: model:ir.model.fields,field_description:automatization_service_center.field_service_center_car__year
+msgid "Year"
+msgstr "Рік"

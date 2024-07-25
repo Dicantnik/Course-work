@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="action_report_overview_result" model="ir.actions.report">
+            <field name="name">Overview Result</field>
+            <field name="model">service.center.overview.result</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">automatization_service_center.overview_result</field>
+            <field name="report_file">automatization_service_center.overview_result</field>
+            <field name="binding_model_id" ref="model_service_center_overview_result"/>
+        </record>
+</odoo>

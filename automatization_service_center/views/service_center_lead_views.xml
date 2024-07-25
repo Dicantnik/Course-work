@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="service_center_lead_view_tree" model="ir.ui.view">
+        <field name="name">service.center.lead.tree</field>
+        <field name="model">service.center.lead</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="status"/>
+                <field name="car_id"/>
+                <field name="res_partner_id"/>
+                <field name="overview_slot_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="service_center_lead_view_form" model="ir.ui.view">
+        <field name="name">service.center.lead.form</field>
+        <field name="model">service.center.lead</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="status" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="car_id" options="{'no_quick_create': True}"/>
+                        <field name="res_partner_id"/>
+                        <field name="overview_slot_id"/>
+                        <field name="engineer_id"/>
+                        <field name="overview_result_id"/>
+                        <field name="comment"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="service_center_lead_view_kanban" model="ir.ui.view">
+        <field name="name">service.center.lead.kanban</field>
+        <field name="model">service.center.lead</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div>
+                                <h6>
+                                    <span>Car:</span>
+                                    <field name="car_id"/>
+                                </h6>
+                                <h6>
+                                    <span>Client:</span>
+                                    <field name="res_partner_id"/>
+                                </h6>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="service_center_lead_act_window" model="ir.actions.act_window">
+        <field name="name">Lead</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">service.center.lead</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem id="service_center_lead_patient_view"
+              action="service_center_lead_act_window"
+              parent="service_center_lead_menu"
+              name="Leads"
+              sequence="1"/>
+</odoo>
